@@ -1,0 +1,5 @@
+[user]
+	email = mike@fogel.ca
+	name = Mike Fogel
+[core]
+	excludesfile = /Users/mfogel/.gitignore
