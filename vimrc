@@ -4,7 +4,11 @@ filetype plugin indent on
 set visualbell t_vb=
 set nu
 set hls
+
+" desert colorscheme, extended a bit so the SignColumn matches well
+" https://github.com/fugalh/desert.vim
 colorscheme desert
+highlight SignColumn guibg=grey20 ctermbg=black
 
 " https://stackoverflow.com/a/15317146/103909
 set backupdir=~/.vim/backup//
@@ -19,6 +23,15 @@ autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
 " https://github.com/w0rp/ale#5iv-how-can-i-show-errors-or-warnings-in-my-statusline
 let g:airline#extensions#ale#enabled = 1
+
+" Ale configuration
+" https://github.com/w0rp/ale/blob/master/doc/ale.txt
+let g:ale_sign_column_always = 1
+let g:ale_change_sign_column_color = 1
+let g:ale_lint_on_text_changed = 0
+
+" open sign column right at startup. Without this there's an annoying delay
+set scl:yes
 
 set foldmethod=syntax
 set foldlevel=99
