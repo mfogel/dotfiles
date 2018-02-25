@@ -36,3 +36,8 @@ au BufNewFile,BufRead *.geojson set filetype=json
 
 " treat Jakefiles as javascript
 au BufNewFile,BufRead Jakefile set filetype=javascript
+
+" https://support.apple.com/en-us/HT201749
+" http://www.levien.com/type/myfonts/inconsolata.html
+set guifont=Inconsolata\ Regular:h12
+set guioptions-=rL
