@@ -4,6 +4,7 @@ filetype plugin indent on
 set visualbell t_vb=
 set nu
 set hls
+set showtabline=2
 
 " desert colorscheme, extended a bit so the SignColumn matches well
 " https://github.com/fugalh/desert.vim
@@ -54,3 +55,4 @@ au BufNewFile,BufRead Jakefile set filetype=javascript
 " http://www.levien.com/type/myfonts/inconsolata.html
 set guifont=Inconsolata\ Regular:h12
 set guioptions-=rL
+set linespace=2
