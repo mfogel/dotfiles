@@ -22,3 +22,6 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 
 # go commands
 export PATH=~/go/bin:${PATH}
+
+# user home bin directory searched first, use for overrides
+export PATH=~/bin:${PATH}
