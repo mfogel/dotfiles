@@ -25,3 +25,6 @@ export PATH=~/go/bin:${PATH}
 
 # user home bin directory searched first, use for overrides
 export PATH=~/bin:${PATH}
+
+# pyenv
+eval "$(pyenv init -)"
