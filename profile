@@ -28,3 +28,7 @@ export PATH=~/bin:${PATH}
 
 # pyenv
 eval "$(pyenv init -)"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+source '/usr/local/opt/nvm/nvm.sh'
