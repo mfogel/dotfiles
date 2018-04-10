@@ -32,3 +32,6 @@ eval "$(pyenv init -)"
 # nvm
 export NVM_DIR="$HOME/.nvm"
 source '/usr/local/opt/nvm/nvm.sh'
+
+# android sdk installed via android studio
+export ANDROID_HOME=~/Library/Android/sdk
