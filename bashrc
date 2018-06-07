@@ -20,11 +20,11 @@ set -o vi
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 
+# android sdk installed via android studio
+export ANDROID_HOME=~/Library/Android/sdk
+
 # go commands
 export PATH=~/go/bin:${PATH}
-
-# user home bin directory searched first, use for overrides
-export PATH=~/bin:${PATH}
 
 # pyenv
 eval "$(pyenv init -)"
@@ -36,5 +36,5 @@ source '/usr/local/opt/nvm/nvm.sh'
 # rbenv
 eval "$(rbenv init -)"
 
-# android sdk installed via android studio
-export ANDROID_HOME=~/Library/Android/sdk
+# user home bin directory searched first, use for overrides
+export PATH=~/bin:${PATH}
