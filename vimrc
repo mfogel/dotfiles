@@ -42,7 +42,13 @@ set foldlevel=99
 set clipboard=unnamed
 
 " https://github.com/sheerun/prettier-standard#vim
-let g:ale_fixers = {'javascript': ['prettier_standard'], 'css': ['prettier'], 'scss': ['prettier'], 'json': ['prettier']}
+let g:ale_fixers = {
+\   'javascript': ['prettier_standard'],
+\   'css': ['prettier'],
+\   'scss': ['prettier'],
+\   'json': ['prettier'],
+\   'vue': ['prettier']
+\ }
 let g:ale_fix_on_save = 1
 
 " treat geojson files as json
