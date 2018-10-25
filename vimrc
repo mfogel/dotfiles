@@ -62,6 +62,6 @@ au BufNewFile,BufRead *.vue set filetype=vue
 
 " https://support.apple.com/en-us/HT201749
 " http://www.levien.com/type/myfonts/inconsolata.html
-set guifont=Inconsolata\ Regular:h12
+set guifont=Inconsolata\ Regular:h14
 set guioptions-=rL
 set linespace=2
