@@ -43,7 +43,7 @@ set clipboard=unnamed
 
 " https://github.com/sheerun/prettier-standard#vim
 let g:ale_fixers = {
-\   'javascript': ['prettier_standard'],
+\   'javascript': ['prettier'],
 \   'css': ['prettier'],
 \   'scss': ['prettier'],
 \   'json': ['prettier'],
