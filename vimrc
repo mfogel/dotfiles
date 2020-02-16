@@ -5,6 +5,7 @@ set visualbell t_vb=
 set nu
 set hls
 set showtabline=2
+set nomodeline
 
 " desert colorscheme, extended a bit so the SignColumn matches well
 " https://github.com/fugalh/desert.vim

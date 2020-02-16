@@ -38,3 +38,19 @@ eval "$(rbenv init -)"
 
 # user home bin directory searched first, use for overrides
 export PATH=~/bin:${PATH}
+
+# iterm2 tab titles
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD/$HOME/\~}\007"'
+
+# lower case uuids
+alias uuidgen='uuidgen | tr "[:upper:]" "[:lower:]"'
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.bash
