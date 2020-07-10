@@ -32,6 +32,20 @@ let g:ale_sign_column_always = 1
 let g:ale_change_sign_column_color = 1
 let g:ale_lint_on_text_changed = 0
 
+let g:ale_fixers = {
+\   'python': ['black', 'isort'],
+\   'javascript': ['prettier'],
+\   'typescript': ['prettier'],
+\   'css': ['prettier'],
+\   'scss': ['prettier'],
+\   'json': ['prettier'],
+\   'vue': ['prettier']
+\ }
+let g:ale_fix_on_save = 1
+
+" workaround for https://github.com/dense-analysis/ale/issues/2885
+let g:ale_python_isort_options = '--settings-path .'
+
 " open sign column right at startup. Without this there's an annoying delay
 set scl:yes
 
@@ -41,16 +55,6 @@ set foldlevel=99
 " Make system clipboard and vim's the same
 " http://vim.wikia.com/wiki/Accessing_the_system_clipboard
 set clipboard=unnamed
-
-" https://github.com/sheerun/prettier-standard#vim
-let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'css': ['prettier'],
-\   'scss': ['prettier'],
-\   'json': ['prettier'],
-\   'vue': ['prettier']
-\ }
-let g:ale_fix_on_save = 1
 
 " treat geojson files as json
 au BufNewFile,BufRead *.geojson set filetype=json
