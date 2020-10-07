@@ -43,9 +43,6 @@ let g:ale_fixers = {
 \ }
 let g:ale_fix_on_save = 1
 
-" workaround for https://github.com/dense-analysis/ale/issues/2885
-let g:ale_python_isort_options = '--settings-path .'
-
 " open sign column right at startup. Without this there's an annoying delay
 set scl:yes
 
@@ -61,9 +58,6 @@ au BufNewFile,BufRead *.geojson set filetype=json
 
 " treat Jakefiles as javascript
 au BufNewFile,BufRead Jakefile set filetype=javascript
-
-" recognize vue files
-au BufNewFile,BufRead *.vue set filetype=vue
 
 " https://support.apple.com/en-us/HT201749
 " http://www.levien.com/type/myfonts/inconsolata.html
