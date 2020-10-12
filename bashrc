@@ -46,6 +46,9 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD/$HOME/\~}\007"'
 # lower case uuids
 alias uuidgen='uuidgen | tr "[:upper:]" "[:lower:]"'
 
+# https://www.gnupg.org/(it)/documentation/manuals/gnupg/Common-Problems.html
+export GPG_TTY=$(tty)
+
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
 [ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash ] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.bash
