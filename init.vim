@@ -1,4 +1,4 @@
-colorscheme elflord
+set hidden
 set number
 
 " spaces, not tabs
@@ -30,7 +30,10 @@ Plug 'jparise/vim-graphql', {'tag': 'v1.3'}
 Plug 'lepture/vim-velocity', {'commit': 'a494e9e', 'for': 'velocity'}
 Plug 'numirias/semshi', {'commit': '801d0c9', 'do': ':UpdateRemotePlugins', 'for': 'python'}
 Plug 'pangloss/vim-javascript', {'commit': '3c90d0c', 'for': 'javascript'}
+Plug 'Soares/base16.nvim', {'commit': '340e914'}
+Plug 'tpope/vim-vinegar', {'commit': '5fee9d2'}
 Plug 'vim-airline/vim-airline', {'commit': 'aa773f5'}
+Plug 'vim-airline/vim-airline-themes', {'commit': 'e1b0d9f'}
 Plug 'Yggdroot/indentLine', {'commit': '1cbd532'}
 call plug#end()
 
@@ -52,11 +55,19 @@ let g:ale_fixers = {
       \ }
 let g:ale_fix_on_save = 1
 
+" vim-airline configuration
 " https://github.com/dense-analysis/ale#5vii-how-can-i-show-errors-or-warnings-in-my-statusline
+let g:airline_statusline_ontop=1
 let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Open sign column immediatlely at startup. Without this there's an annoying delay.
 " Initialize its colors like Ale will. The 'colorscheme' command must have completed
 " before this runs to avoid an annoying grey flash.
 set signcolumn:yes
 highlight clear SignColumn
+
+" https://github.com/Soares/base16.nvim
+set termguicolors
+colorscheme tomorrow
+let g:airline_theme='base16_tomorrow'
