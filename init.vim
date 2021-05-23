@@ -24,6 +24,8 @@ Plug 'dense-analysis/ale', {'tag': 'v3.0.0'}
 Plug 'elzr/vim-json', {'commit': '3727f08', 'for': 'json'}
 Plug 'HerringtonDarkholme/yats.vim', {'commit': '6104b30'}
 Plug 'jparise/vim-graphql', {'tag': 'v1.3'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'lepture/vim-velocity', {'commit': 'a494e9e', 'for': 'velocity'}
 Plug 'maxmellon/vim-jsx-pretty', {'commit': '6989f16'}
 Plug 'numirias/semshi', {'commit': '801d0c9', 'do': ':UpdateRemotePlugins', 'for': 'python'}
