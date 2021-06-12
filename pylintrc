@@ -1,0 +1,2 @@
+max-line-length = 114
+disable = "C, R, import-error, attribute-defined-outside-init, fixme, no-name-in-module, unused-argument, logging-fstring-interpolation, no-member, super-init-not-called, protected-access, broad-except, unused-import, arguments-differ, redefined-outer-name, unsubscriptable-object"
