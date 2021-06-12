@@ -28,7 +28,9 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=~/go/bin:${PATH}
 
 # pyenv
-eval "$(pyenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
