@@ -31,6 +31,7 @@ Plug 'maxmellon/vim-jsx-pretty', {'commit': '6989f16'}
 Plug 'numirias/semshi', {'commit': '801d0c9', 'do': ':UpdateRemotePlugins', 'for': 'python'}
 Plug 'pangloss/vim-javascript', {'commit': '3c90d0c', 'for': 'javascript'}
 Plug 'Soares/base16.nvim', {'commit': '340e914'}
+Plug 'tpope/vim-unimpaired', {'commit': '4afbe5e'}
 Plug 'tpope/vim-vinegar', {'commit': 'b245f3a'}
 Plug 'vim-airline/vim-airline', {'commit': '4a64fbf'}
 Plug 'vim-airline/vim-airline-themes', {'commit': '531bcc9'}
@@ -79,7 +80,3 @@ highlight clear SignColumn
 set termguicolors
 colorscheme tomorrow
 let g:airline_theme='base16_tomorrow'
-
-" fast buffer switching
-:nnoremap <C-n> :bn<CR>
-:nnoremap <C-p> :bp<CR>
