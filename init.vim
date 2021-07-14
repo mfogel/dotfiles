@@ -31,6 +31,7 @@ Plug 'maxmellon/vim-jsx-pretty', {'commit': '6989f16'}
 Plug 'numirias/semshi', {'commit': '801d0c9', 'do': ':UpdateRemotePlugins', 'for': 'python'}
 Plug 'pangloss/vim-javascript', {'commit': '3c90d0c', 'for': 'javascript'}
 Plug 'Soares/base16.nvim', {'commit': '340e914'}
+Plug 'tpope/vim-fugitive', {'tag': 'v3.3'}
 Plug 'tpope/vim-unimpaired', {'commit': '4afbe5e'}
 Plug 'tpope/vim-vinegar', {'commit': 'b245f3a'}
 Plug 'vim-airline/vim-airline', {'commit': '4a64fbf'}
