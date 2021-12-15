@@ -6,3 +6,5 @@
 	excludesfile = /Users/mfogel/.gitignore
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
