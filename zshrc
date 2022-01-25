@@ -59,3 +59,7 @@ zplug load # --verbose
 
 # use neovim
 alias vi='nvim'
+
+# Poetry official installer puts poetry in this dir
+# https://python-poetry.org/docs/master/#installing-with-the-official-installer
+export PATH="/Users/mfogel/.local/bin:$PATH"

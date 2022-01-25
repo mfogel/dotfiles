@@ -1,9 +1,27 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "json",
+    "jsonc"
+  ],
   "languageserver": {
     "graphql": {
       "command": "graphql-lsp",
-      "args": ["server", "-m", "stream"],
-      "filetypes": ["typescript", "typescriptreact", "graphql"]
+      "args": [
+        "server",
+        "-m",
+        "stream"
+      ],
+      "filetypes": [
+        "typescript",
+        "typescriptreact",
+        "graphql"
+      ]
     }
-  }
+  },
+  "pyright.organizeimports.provider": "isort",
+  "python.formatting.provider": "black",
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": true
 }
