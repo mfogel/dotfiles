@@ -10,7 +10,7 @@ export PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{243}%2~%f%b %# '
 # colors
 # https://github.com/sharkdp/vivid
 # https://superuser.com/a/707567
-alias ls="gls --color=auto"
+alias ls='gls --color=auto'
 export LS_COLORS="$(vivid generate molokai)"
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
@@ -56,3 +56,6 @@ if ! zplug check --verbose; then
     fi
 fi
 zplug load # --verbose
+
+# use neovim
+alias vi='nvim'
