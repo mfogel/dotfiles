@@ -24,6 +24,11 @@ Plug 'neoclide/coc.nvim', {'commit': '873b594'}
 " https://github.com/morhetz/gruvbox
 Plug 'morhetz/gruvbox', {'commit': 'bf2885a'}
 
+" Status line
+" https://github.com/nvim-lualine/lualine.nvim
+Plug 'nvim-lualine/lualine.nvim', {'commit': '9208bae'}
+Plug 'kyazdani42/nvim-web-devicons', {'commit': '634e268'}
+
 call plug#end()
 """"""""""""""" Vim Plug plugins end """"""""""""""""""""
 
@@ -35,6 +40,7 @@ let g:coc_global_extensions = [
   \'coc-html',
   \'coc-json',
   \'coc-markdownlint',
+  \'coc-prettier',
   \'coc-pyright',
   \'coc-toml',
   \'coc-yaml'
@@ -147,14 +153,31 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')
 
-" Add (Neo)Vim's native statusline support.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
 " python files: sort imports using isort before saving
 " https://github.com/fannheyward/coc-pyright/issues/489#issuecomment-845709431
 autocmd BufWritePre *.py silent! :call CocAction('runCommand', 'python.sortImports')
 
 """"""""""""""" CoC config end """"""""""""""""""""
+
+""""""""""""""" Markdown optimized for note-taking begin """"""""""""""""""""
+
+" markdown at 80 chars for good note-taking, everything else at 120
+" https://gitter.im/neoclide/coc.nvim?at=5f131f3582ccdc78add05802
+autocmd BufEnter *.md call coc#config('prettier.printWidth', 80)
+autocmd BufLeave *.md call coc#config('prettier.printWidth', 120)
+
+autocmd BufEnter *.md set signcolumn=no
+autocmd BufLeave *.md set signcolumn=yes
+
+""""""""""""""" Markdown optimized for note-taking end """"""""""""""""""""
+
+" configure lualine
+" Requires a font patched with glyphs
+" https://github.com/ryanoasis/nerd-fonts
+" https://github.com/Karmenzind/monaco-nerd-fonts
+lua << END
+require('lualine').setup()
+END
 
 " configure tree-sitter
 lua <<EOF
