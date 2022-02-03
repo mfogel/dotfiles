@@ -29,6 +29,9 @@ Plug 'morhetz/gruvbox', {'commit': 'bf2885a'}
 Plug 'nvim-lualine/lualine.nvim', {'commit': '9208bae'}
 Plug 'kyazdani42/nvim-web-devicons', {'commit': '634e268'}
 
+" Helpful mappings
+Plug 'tpope/vim-unimpaired', {'commit': 'f992923'}
+
 call plug#end()
 """"""""""""""" Vim Plug plugins end """"""""""""""""""""
 
