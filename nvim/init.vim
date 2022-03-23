@@ -8,6 +8,17 @@ set expandtab shiftwidth=2 tabstop=2
 " spacebar leader
 let mapleader=" "
 
+" treat geojson files as json
+au BufNewFile,BufRead *.geojson setfiletype json
+
+" copy & paste from system clipboard by prepending leader
+vnoremap <leader>y "+y
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+vnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>P "+P
+
 """"""""""""""" Vim Plug plugins begin """"""""""""""""""""
 " https://github.com/junegunn/vim-plug
 call plug#begin(stdpath('data') . '/plugged')
@@ -39,6 +50,7 @@ call plug#end()
 " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#install-extension
 let g:coc_global_extensions = [
   \'coc-css',
+  \'coc-eslint',
   \'coc-git',
   \'coc-html',
   \'coc-json',
@@ -46,6 +58,7 @@ let g:coc_global_extensions = [
   \'coc-prettier',
   \'coc-pyright',
   \'coc-toml',
+  \'coc-tsserver',
   \'coc-yaml'
   \]
 
@@ -172,6 +185,9 @@ autocmd BufLeave *.md call coc#config('prettier.printWidth', 120)
 autocmd BufEnter *.md set signcolumn=no
 autocmd BufLeave *.md set signcolumn=yes
 
+autocmd BufEnter *.md set spell
+autocmd BufLeave *.md set spell!
+
 """"""""""""""" Markdown optimized for note-taking end """"""""""""""""""""
 
 " configure lualine
@@ -179,7 +195,12 @@ autocmd BufLeave *.md set signcolumn=yes
 " https://github.com/ryanoasis/nerd-fonts
 " https://github.com/Karmenzind/monaco-nerd-fonts
 lua << END
-require('lualine').setup()
+require('lualine').setup {
+  sections = {
+    lualine_c = {'b:coc_git_blame'},
+    lualine_x = {'filename', 'encoding', 'fileformat', 'filetype'},
+  }
+}
 END
 
 " configure tree-sitter

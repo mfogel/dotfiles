@@ -9,8 +9,10 @@
     "markdown",
     "python",
     "typescript",
+    "vue",
     "yaml"
   ],
+  "git.addGBlameToBufferVar": true,
   "languageserver": {
     "graphql": {
       "command": "graphql-lsp",
@@ -18,10 +20,7 @@
       "filetypes": ["typescript", "typescriptreact", "graphql"]
     }
   },
-  "prettier.printWidth": 120,
-  "prettier.proseWrap": "always",
-  "prettier.trailingComma": "all",
-  "prettier.semi": false,
+  "prettier.disableLanguages": [],
   "pyright.organizeimports.provider": "isort",
   "python.formatting.provider": "black",
   "python.linting.lintOnSave": true,
