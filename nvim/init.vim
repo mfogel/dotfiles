@@ -20,23 +20,23 @@ call plug#begin(stdpath('data') . '/plugged')
 
 " syntax highlighting, indenting, folding
 " https://github.com/nvim-treesitter/nvim-treesitter
-Plug 'nvim-treesitter/nvim-treesitter', {'commit': 'f9179db'}
+Plug 'nvim-treesitter/nvim-treesitter', {'commit': '6840b37'}
 
 " LSP ecosystem
 " https://github.com/neoclide/coc.nvim
-Plug 'neoclide/coc.nvim', {'commit': '873b594'}
+Plug 'neoclide/coc.nvim', {'tag': 'v0.0.82'}
 
 " Colors
-" https://github.com/morhetz/gruvbox
+" https://github.com/morhetz/gruvboxk
 Plug 'morhetz/gruvbox', {'commit': 'bf2885a'}
 
 " Status line
 " https://github.com/nvim-lualine/lualine.nvim
-Plug 'nvim-lualine/lualine.nvim', {'commit': '9208bae'}
+Plug 'nvim-lualine/lualine.nvim', {'commit': 'a8cf88c'}
 Plug 'kyazdani42/nvim-web-devicons', {'commit': '634e268'}
 
 " Helpful mappings
-Plug 'tpope/vim-unimpaired', {'commit': 'f992923'}
+Plug 'tpope/vim-unimpaired', {'tag': 'v2.1'}
 
 call plug#end()
 """"""""""""""" Vim Plug plugins end """"""""""""""""""""
