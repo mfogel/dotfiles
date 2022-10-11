@@ -1,7 +1,7 @@
 [user]
 	email = mike@fogel.ca
 	name = Mike Fogel
-	signingkey = 62E2382C6CB57485
+	signingkey = B4DF37CBCAA61B4C0D9055F2FF4DA3F9BF8199AA
 [core]
 	excludesfile = /Users/mfogel/.gitignore
 [commit]
