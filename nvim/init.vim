@@ -11,13 +11,8 @@ let mapleader=" "
 " treat geojson files as json
 au BufNewFile,BufRead *.geojson setfiletype json
 
-" copy & paste from system clipboard by prepending leader
-vnoremap <leader>y "+y
-nnoremap <leader>y "+y
-nnoremap <leader>p "+p
-vnoremap <leader>p "+p
-nnoremap <leader>P "+P
-vnoremap <leader>P "+P
+" use system keyboard
+set clipboard+=unnamedplus
 
 """"""""""""""" Vim Plug plugins begin """"""""""""""""""""
 " https://github.com/junegunn/vim-plug
