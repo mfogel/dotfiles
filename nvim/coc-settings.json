@@ -21,6 +21,7 @@
     }
   },
   "prettier.disableLanguages": [],
+  "pyright.enable": true,
   "pyright.organizeimports.provider": "isort",
   "python.formatting.provider": "black",
   "python.linting.lintOnSave": true,
