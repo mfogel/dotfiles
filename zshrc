@@ -63,3 +63,6 @@ alias vi='nvim'
 # Poetry official installer puts poetry in this dir
 # https://python-poetry.org/docs/master/#installing-with-the-official-installer
 export PATH="/Users/mfogel/.local/bin:$PATH"
+
+# gvm (installed via script https://github.com/moovweb/gvm#installing)
+[[ -s "/Users/mfogel/.gvm/scripts/gvm" ]] && source "/Users/mfogel/.gvm/scripts/gvm"
