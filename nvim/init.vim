@@ -47,6 +47,7 @@ let g:coc_global_extensions = [
   \'coc-css',
   \'coc-eslint',
   \'coc-git',
+  \'coc-go',
   \'coc-html',
   \'coc-json',
   \'coc-markdownlint',

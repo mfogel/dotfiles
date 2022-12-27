@@ -66,3 +66,6 @@ export PATH="/Users/mfogel/.local/bin:$PATH"
 
 # gvm (installed via script https://github.com/moovweb/gvm#installing)
 [[ -s "/Users/mfogel/.gvm/scripts/gvm" ]] && source "/Users/mfogel/.gvm/scripts/gvm"
+
+# go & EQ https://goproxy.io/docs/GOPRIVATE-env.html
+export GOPRIVATE=gitlab.com/equilibrium-energy/*
