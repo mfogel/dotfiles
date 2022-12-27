@@ -20,20 +20,20 @@ call plug#begin(stdpath('data') . '/plugged')
 
 " syntax highlighting, indenting, folding
 " https://github.com/nvim-treesitter/nvim-treesitter
-Plug 'nvim-treesitter/nvim-treesitter', {'commit': '6840b37'}
+Plug 'nvim-treesitter/nvim-treesitter', {'tag': 'v0.8.0'}
 
 " LSP ecosystem
 " https://github.com/neoclide/coc.nvim
 Plug 'neoclide/coc.nvim', {'tag': 'v0.0.82'}
 
 " Colors
-" https://github.com/morhetz/gruvboxk
+" https://github.com/morhetz/gruvbox
 Plug 'morhetz/gruvbox', {'commit': 'bf2885a'}
 
 " Status line
 " https://github.com/nvim-lualine/lualine.nvim
-Plug 'nvim-lualine/lualine.nvim', {'commit': 'a8cf88c'}
-Plug 'kyazdani42/nvim-web-devicons', {'commit': '634e268'}
+Plug 'nvim-lualine/lualine.nvim', {'commit': 'fffbcb8'}
+Plug 'kyazdani42/nvim-web-devicons', {'commit': '05e1072'}
 
 " Helpful mappings
 Plug 'tpope/vim-unimpaired', {'tag': 'v2.1'}
