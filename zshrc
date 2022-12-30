@@ -47,7 +47,7 @@ source $ZPLUG_HOME/init.zsh
 zplug "Aloxaf/fzf-tab", at:e85f76a
 zplug "jeffreytse/zsh-vi-mode", at:v0.8.5
 zplug "lukechilds/zsh-nvm", at:23067bd
-zplug "mattberther/zsh-pyenv", at:56a3081
+zplug "davidparsson/zsh-pyenv-lazy", at:058d6bd && ZSH_PYENV_LAZY_VIRTUALENV=true
 zplug "zsh-users/zsh-autosuggestions", at:v0.7.0
 zplug "zsh-users/zsh-syntax-highlighting", at:c7caf57, defer:2
 
