@@ -1,3 +1,6 @@
+# uncomment, along with last line, to profile loading times
+#zmodload zsh/zprof
+
 # case-insensitive tab completion
 # https://superuser.com/a/1092328
 autoload -Uz compinit && compinit
@@ -69,3 +72,6 @@ export PATH="/Users/mfogel/.local/bin:$PATH"
 
 # go & EQ https://goproxy.io/docs/GOPRIVATE-env.html
 export GOPRIVATE=gitlab.com/equilibrium-energy/*
+
+# uncomment, along with first line, to profile loading times
+#zprof
