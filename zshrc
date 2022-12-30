@@ -46,8 +46,13 @@ source $ZPLUG_HOME/init.zsh
 # zplug plugins
 zplug "Aloxaf/fzf-tab", at:e85f76a
 zplug "jeffreytse/zsh-vi-mode", at:v0.8.5
+
+export NVM_AUTO_USE=true NVM_LAZY_LOAD=true NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim')
 zplug "lukechilds/zsh-nvm", at:23067bd
-zplug "davidparsson/zsh-pyenv-lazy", at:058d6bd && ZSH_PYENV_LAZY_VIRTUALENV=true
+
+export ZSH_PYENV_LAZY_VIRTUALENV=true
+zplug "davidparsson/zsh-pyenv-lazy", at:058d6bd
+
 zplug "zsh-users/zsh-autosuggestions", at:v0.7.0
 zplug "zsh-users/zsh-syntax-highlighting", at:c7caf57, defer:2
 
@@ -62,6 +67,7 @@ zplug load # --verbose
 
 # use neovim
 alias vi='nvim'
+alias vim='nvim'
 
 # Poetry official installer puts poetry in this dir
 # https://python-poetry.org/docs/master/#installing-with-the-official-installer
