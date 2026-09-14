@@ -47,9 +47,6 @@ source $ZPLUG_HOME/init.zsh
 zplug "Aloxaf/fzf-tab", at:e85f76a
 zplug "jeffreytse/zsh-vi-mode", at:v0.8.5
 
-export NVM_AUTO_USE=true NVM_LAZY_LOAD=true NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim')
-zplug "lukechilds/zsh-nvm", at:23067bd
-
 export ZSH_PYENV_LAZY_VIRTUALENV=true
 zplug "davidparsson/zsh-pyenv-lazy", at:058d6bd
 
@@ -65,9 +62,9 @@ if ! zplug check --verbose; then
 fi
 zplug load # --verbose
 
-# use neovim
-alias vi='nvim'
-alias vim='nvim'
+# use lunarvim
+alias vi='lvim'
+alias vim='lvim'
 
 # Poetry official installer puts poetry in this dir
 # https://python-poetry.org/docs/master/#installing-with-the-official-installer
@@ -81,3 +78,4 @@ export GOPRIVATE=gitlab.com/equilibrium-energy/*
 
 # uncomment, along with first line, to profile loading times
 #zprof
+eval "$(mise activate zsh)"
